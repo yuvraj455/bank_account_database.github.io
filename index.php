@@ -12,16 +12,24 @@
 
     <body>
         <header>
+
+        <!--global header navigation-->
            <?php
                 include("includes/global-header-nav.php");
            ?>
+
+           <!--logo image-->
            <img src="images/header.jpg" alt="ICICI Bank Logo" class="logo">
         </header>
 
+        <!--main-->
         <main>
-            
+
+            <!--web page heading-->
             <h1 class="heading">Bank Account Details</h1>
             <form method="post">
+
+            <!--fieldset for personal details-->
                 <fieldset>
                     <legend>Personal Details</legend>
                     
@@ -58,6 +66,7 @@
                 </fieldset>
                     
 
+                <!--fieldset for account details-->
                 <fieldset>
                     <legend>Account Classification and Usage</legend>
                     <label for="account-type">Account type:</label>
@@ -86,9 +95,6 @@
                         <option>Student</option>
                     </select>
 
-                    <label for="other">If other, Please specify:</label>
-                    <input type="text" name="other" >
-
                     <label for="income">Annual Income:</label>
                     <input type="text" name="income" required />
 
@@ -103,8 +109,7 @@
                 </fieldset>
                 
 
-                
-
+                <!--fieldset for username and password-->
                 <fieldset>
                     <legend>Username & Password</legend>
                     <h2>Set your Username & Password</h2>
@@ -116,7 +121,8 @@
 
                 </fieldset>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <!--submit button-->
+                <button type="submit" class="btn btn-primary">Create Account</button>
                     
             </form>
 
